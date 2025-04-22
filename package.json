@@ -1,7 +1,7 @@
 {
     "name": "@CrazyWolf13/tizen-tunein",
     "appName": "Tizen-TuneIn",
-    "version": "1.0.0",
+    "version": "0.0.2",
     "description": "TuneIn Radio player for Tizen (Samsung) TVs",
     "packageType": "mods",
     "websiteURL": "https://tunein.com/radio/home/",

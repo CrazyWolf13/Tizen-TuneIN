@@ -25,13 +25,13 @@ app.get('/status', (req, res) => {
     });
 });
 
-// Function to communicate with the TV's native capabilities if needed
+// Function to communicate with the TV's native capabilities
 function setupTVInteractions() {
     // Check if Tizen APIs are available
     if (typeof tizen !== 'undefined') {
         console.log('Tizen APIs available, setting up TV interactions');
         
-        // Example: Register for media key events if not already handled in the webview
+        // Register media keys
         try {
             tizen.tvinputdevice.registerKey('MediaPlayPause');
             tizen.tvinputdevice.registerKey('MediaPlay');
