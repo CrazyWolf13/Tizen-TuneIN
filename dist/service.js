@@ -21,7 +21,7 @@ app.get('/status', (req, res) => {
     res.json({
         status: 'OK',
         module: 'TizenTuneIn',
-        version: '0.0.2'
+        version: '0.0.4'
     });
 });
 
