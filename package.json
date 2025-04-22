@@ -18,7 +18,7 @@
         "MediaTrackPrevious"
     ],
     "repository": {
-      "url": "https://github.com/CrazyWolf13/tizen-tunein"
+        "url": "git+https://github.com/CrazyWolf13/tizen-tunein"
     },
     "license": "MIT"
-  }
+}
