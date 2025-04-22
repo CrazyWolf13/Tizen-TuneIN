@@ -1,22 +1,20 @@
 {
     "name": "@CrazyWolf13/tizen-tunein",
     "appName": "Tizen-TuneIn",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "TuneIn Radio player for Tizen (Samsung) TVs",
-    "packageType": "mods",
+    "packageType": "app",
     "websiteURL": "https://tunein.com/radio/home/",
-    "main": "dist/userScript.js",
     "author": "CrazyWolf13",
-    "serviceFile": "dist/service.js",
     "keys": [
-      "MediaPlayPause",
-      "MediaPlay",
-      "MediaPause",
-      "MediaStop",
-      "MediaFastForward",
-      "MediaRewind",
-      "MediaTrackNext",
-      "MediaTrackPrevious"
+        "MediaPlayPause",
+        "MediaPlay",
+        "MediaPause",
+        "MediaStop",
+        "MediaFastForward",
+        "MediaRewind",
+        "MediaTrackNext",
+        "MediaTrackPrevious"
     ],
     "repository": {
       "url": "https://github.com/CrazyWolf13/tizen-tunein"

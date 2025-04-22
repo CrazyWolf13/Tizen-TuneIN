@@ -21,7 +21,7 @@ app.get('/status', (req, res) => {
     res.json({
         status: 'OK',
         module: 'TizenTuneIn',
-        version: '1.0.0'
+        version: '0.0.2'
     });
 });
 
@@ -30,7 +30,7 @@ function setupTVInteractions() {
     // Check if Tizen APIs are available
     if (typeof tizen !== 'undefined') {
         console.log('Tizen APIs available, setting up TV interactions');
-        
+
         // Register media keys
         try {
             tizen.tvinputdevice.registerKey('MediaPlayPause');

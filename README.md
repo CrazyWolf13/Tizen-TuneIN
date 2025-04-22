@@ -11,3 +11,4 @@ Add it as a module to your `TizenBrew` and enjoy!
 4. Type in `@crazywolf13/tizen-tunein`.
 5. Press GREEN button again to go to TizenBrew modules list.
 6. Launch TuneIN Tizen from there.
+
