@@ -21,9 +21,11 @@ app.get('/status', (req, res) => {
     res.json({
         status: 'OK',
         module: 'TizenTuneIn',
-        version: '0.0.5'
+        version: '0.0.6'
     });
 });
+
+
 
 // Function to communicate with the TV's native capabilities
 function setupTVInteractions() {
@@ -32,7 +34,7 @@ function setupTVInteractions() {
         console.log('Tizen APIs available, setting up TV interactions');
 
         // Register media keys
-        try {
+        window.addEventListener('load', function () {
             tizen.tvinputdevice.registerKey('MediaPlayPause');
             tizen.tvinputdevice.registerKey('MediaPlay');
             tizen.tvinputdevice.registerKey('MediaPause');
@@ -40,12 +42,11 @@ function setupTVInteractions() {
             tizen.tvinputdevice.registerKey('MediaTrackNext');
             tizen.tvinputdevice.registerKey('MediaTrackPrevious');
             console.log('Successfully registered media keys');
-        } catch (e) {
-            console.error('Failed to register keys:', e);
-        }
+        });
     } else {
         console.log('Tizen APIs not available, running in limited mode');
     }
+    window.addEventListener('viewshow', updateKeys);
 }
 
 // Start the service
